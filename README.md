@@ -2,11 +2,13 @@
 
 <h1 id="contents">Table of Contents</h1>
 
-- [Intro](#intro)
+- [1.Intro](#1.intro)
+- [2.Design](#2.Design)
+  - [2.1.SpringBoot](#2.1.SpringBoot)
+- [3.Implementation](#3.Implementation)
 
 
-
-<h1 id="intro">Project Introduction - Weather Station </h1>
+<h1 id="1.intro">Project Introduction - Weather Station </h1>
 
 This Project is to give an educational foundation to java mainly, spring boot framework and front-end design with a flair of AI. 
 
@@ -17,4 +19,12 @@ This project will tackle this question from a standpoint of how to use AI to lea
 
 <b>What is the aim?</b><br>
 The aim of this project is to try to see can we help answer this question of organizing our lives more around weather.  
+
+
+<h1 id="2.Design">2.Choosing the SpringBoot for Java</h1>
+<h2 id="2.1.SpringBoot">2.1.SpringBoot</h2>
+
+
+
+<h1 id="3.Implementation"></h1>
 
