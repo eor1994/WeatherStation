@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <form action="/searchWeather" method="get">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="countryCode">Country:</label>
+        <select id="countryCode" name="countryCode">
+            <option value="IRL">Ireland</option>
+            <option value="USA">United States</option>
+            <option value="CAN">Canada</option>
+            <option value="GBR">United Kingdom</option>
+            <option value="FRA">France</option>
+            <option value="DEU">Germany</option>
+
+            <!-- Add more countries as needed -->
+        </select>
+
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div id="weatherResult">
+        <p th:if="${weather != null}">
+            City: <span th:text="${weather.city}"></span> <br>
+            Country: <span th:text="${weather.country}"></span> <br>
+            Weather: <span th:text="${weather.description}"></span> <br>
+            Temperature: <span th:text="${weather.temperature}"></span> °C
+        </p>
+        <p th:if="${error != null}" th:text="${error}"></p>
+    </div>
+</body>
+</html>
