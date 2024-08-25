@@ -71,7 +71,7 @@ Using basic windows terminal commands of cd and then the file path.  <br>
 - PS C:\Users\Eoin\Desktop\WeatherApp\Weather> git commit -m "Initial commit
  <br>
 Now our new repository is now up and running but not the main code
-<br><img src="images/chapter3_githubRe.png.png"> <br>
+<br><img src="images/chapter3_githubRe.png"> <br>
 
 - git config --global user.name "Your Name"
 - git config --global user.email "your-email@example.com"
