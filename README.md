@@ -29,3 +29,4 @@ Generate the following - https://start.spring.io/
 
 <h1 id="3.Implementation"></h1>
 
+<img src="chapter2_spring.png">
