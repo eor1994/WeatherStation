@@ -1,4 +1,3 @@
-<img src="images/chapter1_weather.png"></a>
 <a id="top" <img src="images/chapter1_weather.png"></a>
 <h2>Weather Station</h2><br>
 
