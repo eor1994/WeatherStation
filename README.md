@@ -34,3 +34,16 @@ Generate the following - https://start.spring.io/
 Once you have the following updated  <br>
 Generate and download to personal computer <br>
 Our new file is downloaded and unzipped. To now create a file, we will be working on.  <br>
+
+<img src="images/chapter2_file.png">
+
+New file you can name but ours is different -> <br>
+
+<img src="images/chapter2_image3.png">
+Open up IntelliJ and here we can open the project  <br>
+
+Once we located and selected the folder with all the following spring boot project, we then load this to our IntelliJ. <br>
+<img src="images/chapter2_intelij.png">
+
+This is now completed.  <br>
+Second step is to upload to our git hub so that all changes done we can record and try.  <br>
