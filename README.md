@@ -47,3 +47,48 @@ Once we located and selected the folder with all the following spring boot proje
 
 This is now completed.  <br>
 Second step is to upload to our git hub so that all changes done we can record and try.  <br>
+
+<h2 id="2.2.git">2.2.How to start our git creation</h2>
+Using copilot -> <b>Link - https://chatgpt.com/g/g-2DQzU5UZl-code-copilot/c/e4cdf976-8fe0-467f-a27c-615b0fa5d688</b>
+
+First thing is first to test that git is installed on our machine we need to first check by opening cmd if on windows. <br>
+
+The command -> C:\Users\Eoin\Desktop\WeatherApp>git version <br>
+The expected response -> git version 2.43.0. windows.1 <br>
+
+<img src="images/chapter3_terminal1.png">
+
+We will need to run this on PowerShell as the commands we used did not recognise. Moving this PowerShell, we will need to again locate the directory.<br>
+
+Using basic windows terminal commands of cd and then the file path.  <br>
+- PS C:\Users\Eoin\Desktop\WeatherApp> gh repo create WeatherStation --private --source=.
+- PS C:\Users\Eoin\Desktop\WeatherApp> cd Weather
+- PS C:\Users\Eoin\Desktop\WeatherApp\Weather> git init
+- PS C:\Users\Eoin\Desktop\WeatherApp\Weather> git status
+- PS C:\Users\Eoin\Desktop\WeatherApp\Weather> gh repo create WeatherStation
+- PS C:\Users\Eoin\Desktop\WeatherApp\Weather> echo "# Weather Station" >> README.md
+- PS C:\Users\Eoin\Desktop\WeatherApp\Weather> git add README.md
+- PS C:\Users\Eoin\Desktop\WeatherApp\Weather> git commit -m "Initial commit
+ <br>
+Now our new repository is now up and running but not the main code
+<img src="images/chapter3_githubRe.png.png"> <br>
+
+- git config --global user.name "Your Name"
+- git config --global user.email "your-email@example.com"
+- Create a new directory
+- mkdir my-new-repo
+- cd my-new-repo
+- git init
+<br>
+Now GIT was created but not our project was added to this repository.  <br>
+The errors seen after the repository was created <br>
+<img src="images/chapter3_GitHub_Comamnds1.png"> <br>
+
+So, we had to reinitialize the repository and push. 
+<img src="images/chapter3_GitHub_Comamnds2.png"> <br>
+
+Now we checked our git hub site to see if this worked.  yes, as you can see but this is on a different branch called Main.  <br>
+<img src="images/chapter3_github_Repo_Comp.png"> <br>
+Our project is here and ready to work. We now must start creating our api project and test that the values we want works.  <br>
+
+<br>Our next step is to now work on java and the springboot framework.  <br>
