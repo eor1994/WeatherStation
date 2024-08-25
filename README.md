@@ -71,7 +71,7 @@ Using basic windows terminal commands of cd and then the file path.  <br>
 - PS C:\Users\Eoin\Desktop\WeatherApp\Weather> git commit -m "Initial commit
  <br>
 Now our new repository is now up and running but not the main code
-<img src="images/chapter3_githubRe.png.png"> <br>
+<br><img src="images/chapter3_githubRe.png.png"> <br>
 
 - git config --global user.name "Your Name"
 - git config --global user.email "your-email@example.com"
@@ -82,13 +82,13 @@ Now our new repository is now up and running but not the main code
 <br>
 Now GIT was created but not our project was added to this repository.  <br>
 The errors seen after the repository was created <br>
-<img src="images/chapter3_GitHub_Comamnds1.png"> <br>
+<br><img src="images/chapter3_GitHub_Comamnds1.png"> <br>
 
 So, we had to reinitialize the repository and push. 
-<img src="images/chapter3_GitHub_Comamnds2.png"> <br>
+<br><img src="images/chapter3_GitHub_Comamnds2.png"> <br>
 
 Now we checked our git hub site to see if this worked.  yes, as you can see but this is on a different branch called Main.  <br>
-<img src="images/chapter3_github_Repo_Comp.png"> <br>
+<br><img src="images/chapter3_github_Repo_Comp.png"> <br>
 Our project is here and ready to work. We now must start creating our api project and test that the values we want works.  <br>
 
 <br>Our next step is to now work on java and the springboot framework.  <br>
