@@ -6,6 +6,8 @@
 - [2.Design](#2.Design)
   - [2.1.SpringBoot](#2.1.SpringBoot)
 - [3.Implementation](#3.Implementation)
+- [4.ProjectDesign](#4.ProjectDesign)
+
 
 
 <h1 id="1.intro">Project Introduction - Weather Station </h1>
@@ -92,3 +94,7 @@ Now we checked our git hub site to see if this worked.  yes, as you can see but 
 Our project is here and ready to work. We now must start creating our api project and test that the values we want works.  <br>
 
 <br>Our next step is to now work on java and the springboot framework.  <br>
+
+<h1 id="ProjectDesign">4.Planning our Project Design.</h1> <br>
+
+In this section we will look at how to design our project and the many steps to achieve this part of the project of getting our api to work and to display the info.<br> 
