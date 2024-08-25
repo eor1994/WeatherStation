@@ -24,7 +24,7 @@ This project will tackle this question from a standpoint of how to use AI to lea
 
 <b>What is the aim?</b><br>
 The aim of this project is to try to see can we help answer this question of organizing our lives more around weather.  
-
+<img src="images/images/clothesRecommend.png">
 
 <h1 id="2.Design">2.Choosing the SpringBoot for Java</h1>
 <h2 id="2.1.SpringBoot">2.1.SpringBoot</h2>
