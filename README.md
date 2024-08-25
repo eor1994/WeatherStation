@@ -30,3 +30,7 @@ Generate the following - https://start.spring.io/
 <h1 id="3.Implementation"></h1>
 
 <img src="images/chapter2_spring.png">
+
+Once you have the following updated  <br>
+Generate and download to personal computer <br>
+Our new file is downloaded and unzipped. To now create a file, we will be working on.  <br>
