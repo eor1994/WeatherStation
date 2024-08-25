@@ -23,7 +23,7 @@ Weather is a common issue in our location, changes regular, but what about cloth
 This project will tackle this question from a standpoint of how to use AI to learn from weather on a day to day and run a suggestion with the list of clothes we have in our wardrobe as is how the fridge now knows what is the contents of what we consumer.  
 
 <b>What is the aim?</b><br>
-The aim of this project is to try to see can we help answer this question of organizing our lives more around weather.  
+The aim of this project is to try to see, can we help answer this question of organizing our lives more around weather?  
 <img src="images/clothesRecommend.png">
 
 <h1 id="2.Design">2.Choosing the SpringBoot for Java</h1>
