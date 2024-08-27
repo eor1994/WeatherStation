@@ -12,6 +12,8 @@
   - [2.1.SpringBoot](#2.1.SpringBoot)
 - [3.Implementation](#3.Implementation)
 - [4.Project Design](#4.ProjectDesign)
+  - [4.1.Choosing our Api template](#4.1APiTemplate)
+  - [4.2](#)
 
 
 
@@ -106,3 +108,9 @@ Our next step is to now work on java and the springboot framework.  <br>
 <h1 id="ProjectDesign">4.Planning our Project Design.</h1> <br>
 In this section we will look at how to design our project and the many steps to achieve this part of the project of getting our api to work and to display the info.<br> 
 <img src="images/chapter4_plan.png">
+
+<h2 id="4.1APiTemplate">4.1.Choosing our Api template</h1> <br>
+
+In this section we need to decide on the weather api we want to use. There are many signup options and what each one provided in their responses.  <br>
+
+The api we have a choice of are two we had picked. During this process moved to the second one as the response and using is the easiest.  <br>
