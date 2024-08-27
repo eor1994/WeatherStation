@@ -105,3 +105,4 @@ Our next step is to now work on java and the springboot framework.  <br>
 
 <h1 id="ProjectDesign">4.Planning our Project Design.</h1> <br>
 In this section we will look at how to design our project and the many steps to achieve this part of the project of getting our api to work and to display the info.<br> 
+<img src="images/chapter4_plan.png">
