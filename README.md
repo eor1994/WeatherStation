@@ -13,9 +13,10 @@
 - [3.Implementation](#3.Implementation)
 - [4.Project Design](#4.ProjectDesign)
   - [4.1.Choosing our Api template](#4.1APiTemplate)
-  - [4.2](#)
-
-
+    - [4.1.1.](#4.1.1)
+    - [4.1.2.](#4.1.2)
+  - [4.2.testing our first example on Postman](#4.2.Postman)
+  - [4.3.testing our first example on java](#4.3.testingjava)
 
 <h1 id="1.intro">Project Introduction - Weather Station </h1>
 
@@ -109,8 +110,31 @@ Our next step is to now work on java and the springboot framework.  <br>
 In this section we will look at how to design our project and the many steps to achieve this part of the project of getting our api to work and to display the info.<br> 
 <img src="images/chapter4_plan.png">
 
-<h2 id="4.1APiTemplate">4.1.Choosing our Api template</h1> <br>
+<h2 id="4.1APiTemplate">4.1.Choosing our Api template</h2> <br>
 
 In this section we need to decide on the weather api we want to use. There are many signup options and what each one provided in their responses.  <br>
 
 The api we have a choice of are two we had picked. During this process moved to the second one as the response and using is the easiest.  <br>
+
+Link 1 =  https://openweathermap.org/api <br>
+Link 2 = https://www.weatherapi.com/api-explorer.aspx <br>
+
+<h3 id="4.1APiTemplate_1">4.1.1.Open Weather API</h3> <br>
+Api 1 - 
+We went with this model as suggested by many examples used but also investigeted using the other for testing purposes. 
+
+<h3 id="4.1APiTemplate_1">4.1.2.weather api</h3> <br>
+Api 2 - 
+
+Once we signed up on free trial, we can create our api token to use when making calls.  
+
+<h2 id="4.2.Postman">4.2.testing our first example on Postman</h2> <br>
+
+<h2 id="4.3.testingjava">4.2.testing our first example on java</h2> <br>
+
+Url - https://api.openweathermap.org/data/2.5/weather 
+
+
+
+Let's navigate to our java src and start creating our structure of what we need and why. Our first step is to make sure our project works and builds 
+Headers - https://api.openweathermap.org/data/2.5/weather?lat=53.3498&lon=6.2603&appid={{apiKey}} 
