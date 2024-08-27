@@ -13,8 +13,8 @@
 - [3.Implementation](#3.Implementation)
 - [4.Project Design](#4.ProjectDesign)
   - [4.1.Choosing our Api template](#4.1APiTemplate)
-    - [4.1.1.](#4.1.1)
-    - [4.1.2.](#4.1.2)
+    - [4.1.1.Open Weather API](#4.1.1.APiTemplate_1)
+    - [4.1.2.weather api](#4.1.2.APiTemplate_2)
   - [4.2.testing our first example on Postman](#4.2.Postman)
   - [4.3.testing our first example on java](#4.3.testingjava)
 
@@ -119,11 +119,11 @@ The api we have a choice of are two we had picked. During this process moved to 
 Link 1 =  https://openweathermap.org/api <br>
 Link 2 = https://www.weatherapi.com/api-explorer.aspx <br>
 
-<h3 id="4.1APiTemplate_1">4.1.1.Open Weather API</h3> <br>
+<h3 id="4.1.1.APiTemplate_1">4.1.1.Open Weather API</h3> <br>
 Api 1 - 
 We went with this model as suggested by many examples used but also investigeted using the other for testing purposes. 
 
-<h3 id="4.1APiTemplate_1">4.1.2.weather api</h3> <br>
+<h3 id="4.1.2.APiTemplate_2">4.1.2.weather api</h3> <br>
 Api 2 - 
 
 Once we signed up on free trial, we can create our api token to use when making calls.  
