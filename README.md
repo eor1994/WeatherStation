@@ -120,29 +120,64 @@ Link 1 =  https://openweathermap.org/api <br>
 Link 2 = https://www.weatherapi.com/api-explorer.aspx <br>
 
 <h3 id="4.1.1.APiTemplate_1">4.1.1.Open Weather API</h3> <br>
-Api 1 - https://www.weatherapi.com/api-explorer.aspx
+This api we went using but the second in the list was to compare as both do the same thing. This however is suggested in many examples and here we used for the main code in our project. 
+
+
+
+
+<h3 id="4.1.2.APiTemplate_2">4.1.2.weather api</h3> <br>
+Api 2 - https://www.weatherapi.com/api-explorer.aspx
 <br>
 <img src="images/chapter4_api requirements example 2.png">
-<br>
-We tested with this model as suggested by many examples used but also investigeted using the other for testing purposes. 
+Once we signed up on free trial, we can create our api token to use when making calls. We tested with this model as suggested by many examples used but also investigeted using the other for testing purposes. 
 <br>
 In post man we copied the main link and here added search fields with the tag to host our token to access the data and show in our test examples. 
 <br>
 <img src="images/Chapter4_postman_test2.png">
 <br>
 
-<h3 id="4.1.2.APiTemplate_2">4.1.2.weather api</h3> <br>
-Api 2 - 
+the output is the model we will base our java code off on what we wisht to see on our presentation and data. 
 
-Once we signed up on free trial, we can create our api token to use when making calls.  
-
-<h2 id="4.2.Postman">4.2.testing our first example on Postman</h2> <br>
+<h2 id="4.2.Postman">4.2.Comparing our first example on Postman</h2> <br>
 
 <h2 id="4.3.testingjava">4.2.testing our first example on java</h2> <br>
 
-Url - https://api.openweathermap.org/data/2.5/weather 
+Url that is used -> https://api.openweathermap.org/data/2.5/weather 
+
+Let's navigate to our java src and start creating our structure of what we need and why. 
+Our first step is to make sure our project works and builds 
+Headers - https://api.openweathermap.org/data/2.5/weather?q=Dublin,IRE&appid={{apiKey}} 
 
 
+<h3 id="4.3.2.APiTemplate_2">4.3.1.:/h3> <br>
 
-Let's navigate to our java src and start creating our structure of what we need and why. Our first step is to make sure our project works and builds 
-Headers - https://api.openweathermap.org/data/2.5/weather?lat=53.3498&lon=6.2603&appid={{apiKey}} 
+<h3 id="4.3.2.APiTemplate_2">4.3.1.Java Project structure flow:/h3> <br>
+The following flow shows how our structure is to look when calling the api in our java Project. This is the flow structure of our project.  
+<br>
+weather-api/ 
+
+├── src/ 
+
+│   ├── main/ 
+
+│   │   ├── java/ 
+
+│   │   │   └── com.example.weather/ 
+
+│   │   │       ├── WeatherApiApplication.java 
+
+│   │   │       ├── controller/ 
+
+│   │   │       │   └── WeatherController.java 
+
+│   │   │       └── model/ 
+
+│   │   │           └── WeatherResponse.java 
+
+│   │   └── resources/ 
+
+│   │       └── application.properties 
+
+└── pom.xml 
+
+ 
