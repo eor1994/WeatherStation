@@ -120,8 +120,16 @@ Link 1 =  https://openweathermap.org/api <br>
 Link 2 = https://www.weatherapi.com/api-explorer.aspx <br>
 
 <h3 id="4.1.1.APiTemplate_1">4.1.1.Open Weather API</h3> <br>
-Api 1 - 
-We went with this model as suggested by many examples used but also investigeted using the other for testing purposes. 
+Api 1 - https://www.weatherapi.com/api-explorer.aspx
+<br>
+<img src="images/chapter4_api requirements example 2.png">
+<br>
+We tested with this model as suggested by many examples used but also investigeted using the other for testing purposes. 
+<br>
+In post man we copied the main link and here added search fields with the tag to host our token to access the data and show in our test examples. 
+<br>
+<img src="images/Chapter4_postman_test2.png">
+<br>
 
 <h3 id="4.1.2.APiTemplate_2">4.1.2.weather api</h3> <br>
 Api 2 - 
