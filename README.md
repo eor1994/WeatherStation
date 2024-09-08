@@ -17,6 +17,9 @@
     - [4.1.2.weather api](#4.1.2.APiTemplate_2)
   - [4.2.testing our first example on Postman](#4.2.Postman)
   - [4.3.testing our first example on java](#4.3.testingjava)
+    - [4.3.1.Open Weather API](#4.1.1.APiTemplate_1)
+    - [4.3.2.Open Weather API](#4.1.1.APiTemplate_1)
+    - [4.3.3.Open Weather API](#4.1.1.APiTemplate_1)
 
 <h1 id="1.intro">Project Introduction - Weather Station </h1>
 
@@ -122,9 +125,6 @@ Link 2 = https://www.weatherapi.com/api-explorer.aspx <br>
 <h3 id="4.1.1.APiTemplate_1">4.1.1.Open Weather API</h3> <br>
 This api we went using but the second in the list was to compare as both do the same thing. This however is suggested in many examples and here we used for the main code in our project. 
 
-
-
-
 <h3 id="4.1.2.APiTemplate_2">4.1.2.weather api</h3> <br>
 Api 2 - https://www.weatherapi.com/api-explorer.aspx
 <br>
@@ -140,7 +140,9 @@ the output is the model we will base our java code off on what we wisht to see o
 
 <h2 id="4.2.Postman">4.2.Comparing our first example on Postman</h2> <br>
 
-<h2 id="4.3.testingjava">4.2.testing our first example on java</h2> <br>
+
+
+<h2 id="4.3.testingjava">4.3.testing our first example on java</h2> <br>
 
 Url that is used -> https://api.openweathermap.org/data/2.5/weather 
 
@@ -148,10 +150,43 @@ Let's navigate to our java src and start creating our structure of what we need 
 Our first step is to make sure our project works and builds 
 Headers - https://api.openweathermap.org/data/2.5/weather?q=Dublin,IRE&appid={{apiKey}} 
 
+Our code in the main spring initialization file:
+<br>
+public class WeatherApplication {
 
-<h3 id="4.3.2.APiTemplate_2">4.3.1.:/h3> <br>
+	public static void main(String[] args) throws IOException {
+		SpringApplication.run(WeatherApplication.class, args);
+		//System.out.println("Hello");
+		URL urlOBJ = new URL("https://api.openweathermap.org/data/2.5/weather?q=Dublin,IRE&appid=257b4304aeeb76b44b77358c13ccccac");
+		HttpURLConnection connection = (HttpURLConnection) urlOBJ.openConnection();
+		connection.setRequestMethod("GET");
 
-<h3 id="4.3.2.APiTemplate_2">4.3.1.Java Project structure flow:/h3> <br>
+		int responseCode = connection.getResponseCode();
+		System.out.println("Resonse CODE: "+responseCode);
+
+		if(responseCode == HttpURLConnection.HTTP_OK)
+		{
+			StringBuilder sb = new StringBuilder();
+			Scanner scanner = new Scanner(connection.getInputStream());
+			while (scanner.hasNext())
+			{
+				sb.append(scanner.nextLine());
+			}
+			System.out.println(sb);
+		}
+		//debugging section:
+		//System.out.println("Api response:  ");
+
+	}
+
+}
+<br>
+
+<h3 id="4.3.2.APiTemplate_2">4.3.1.:/h3> 
+<br>
+
+<h3 id="4.3.2.APiTemplate_2">4.3.1.Java Project structure flow:/h3> 
+<br>
 The following flow shows how our structure is to look when calling the api in our java Project. This is the flow structure of our project.  
 <br>
 weather-api/ 
