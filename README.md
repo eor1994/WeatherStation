@@ -192,6 +192,9 @@ In the project we have the url endpoint, we have the token and we know the infor
 <br>
 path -> src/main/java/com/example/Weather/WeatherApplication.java
 
+Now to call the api with using http connection methods.
+<img src="images/Chapater4_first_Java_output.png"> <br> 
+The result shows this in our browser as its using our spring boot. We use the default localhost address, this allowed us to see the type of json details we will display later on in the project.<br>
 <img src="images/chapter_4_springbootResponse.png"> <br>
 
 <h3 id="4.3.1.ModelDesign">4.3.1.Creating our Model</h3> <br>
