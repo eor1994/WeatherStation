@@ -194,7 +194,11 @@ path -> src/main/java/com/example/Weather/WeatherApplication.java
 
 Now to call the api with using http connection methods.
 <img src="images/Chapater4_first_Java_output.png"> <br> 
-The result shows this in our browser as its using our spring boot. We use the default localhost address, this allowed us to see the type of json details we will display later on in the project.<br>
+The result shows this in our browser as its using our spring boot. We use the default localhost address, this allowed us to see the type of json details we will display later on in the project. Our IDE showed this on our project below<br>
+<img src="images/Chapter4_terminal_output.png"> <br> 
+
+Now we know what to expect that the format works with our token but with using our structure with modelm controller and service with springboot, we can generate the same on a browser. As shown below. 
+
 <img src="images/chapter_4_springbootResponse.png"> <br>
 
 <h3 id="4.3.1.ModelDesign">4.3.1.Creating our Model</h3> <br>
