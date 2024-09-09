@@ -17,9 +17,10 @@
     - [4.1.2.weather api](#4.1.2.APiTemplate_2)
   - [4.2.testing our first example on Postman](#4.2.Postman)
   - [4.3.testing our first example on java](#4.3.testingjava)
-    - [4.3.1.Open Weather API](#4.1.1.APiTemplate_1)
-    - [4.3.2.Open Weather API](#4.1.1.APiTemplate_1)
-    - [4.3.3.Open Weather API](#4.1.1.APiTemplate_1)
+    - [4.3.1.Open Weather API](#4.3.1.ModelDesign)
+    - [4.3.2.Open Weather API](#4.3.2.ServiceDesgin)
+    - [4.3.3.Open Weather API](#4.3.3.ControllerDesgin)
+    - 
 
 <h1 id="1.intro">Project Introduction - Weather Station </h1>
 
@@ -139,58 +140,28 @@ In post man we copied the main link and here added search fields with the tag to
 the output is the model we will base our java code off on what we wisht to see on our presentation and data. 
 
 <h2 id="4.2.Postman">4.2.Comparing our first example on Postman</h2> <br>
-
-
+In post man here we take the following template provided by the api documentation. We can create our request and put the following question in the endpoint to get the details we need. 
+<img src="images/Chapter4_postman_test2.png">
+<br>
+Now we run our request to the api endpoint and check to see what informtion we get, the details should follow the document guide.
+<br>
+<img src="images/Chapter4_postman test.png">
+Here you can see in the response it provides a large amount of information, in our project we only wish to have the temperature, location, latitude, longitude and country. 
+<br>
+All other details we can change but in our firts time to get this to display on our front end and to manipulate the data to help move to our AI recommendation part of the Project, we will discuss this later. 
+<br>
+For now we can confirm this works with our token and the details we have added to the api call. No errors, so lets now mimic the same in our java and to present in a readable point of view. <br>
 
 <h2 id="4.3.testingjava">4.3.testing our first example on java</h2> <br>
 
 Url that is used -> https://api.openweathermap.org/data/2.5/weather 
 
 Let's navigate to our java src and start creating our structure of what we need and why. 
-Our first step is to make sure our project works and builds 
-Headers - https://api.openweathermap.org/data/2.5/weather?q=Dublin,IRE&appid={{apiKey}} 
+Our first step is to make sure our project works and builds to the same as how we ran this in our postman application. 
 
-Our code in the main spring initialization file:
+We first start with the models, we need this as a object of what java is to expect and how to pass this information to the rest of the project. We created this in the format of the API. 
 <br>
-public class WeatherApplication {
-
-	public static void main(String[] args) throws IOException {
-		SpringApplication.run(WeatherApplication.class, args);
-		//System.out.println("Hello");
-		URL urlOBJ = new URL("https://api.openweathermap.org/data/2.5/weather?q=Dublin,IRE&appid=257b4304aeeb76b44b77358c13ccccac");
-		HttpURLConnection connection = (HttpURLConnection) urlOBJ.openConnection();
-		connection.setRequestMethod("GET");
-
-		int responseCode = connection.getResponseCode();
-		System.out.println("Resonse CODE: "+responseCode);
-
-		if(responseCode == HttpURLConnection.HTTP_OK)
-		{
-			StringBuilder sb = new StringBuilder();
-			Scanner scanner = new Scanner(connection.getInputStream());
-			while (scanner.hasNext())
-			{
-				sb.append(scanner.nextLine());
-			}
-			System.out.println(sb);
-		}
-		//debugging section:
-		//System.out.println("Api response:  ");
-
-	}
-
-}
-<br>
-
-<h3 id="4.3.2.APiTemplate_2">4.3.1.:/h3> 
-<br>
-
-<h3 id="4.3.2.APiTemplate_2">4.3.1.Java Project structure flow:/h3> 
-<br>
-The following flow shows how our structure is to look when calling the api in our java Project. This is the flow structure of our project.  
-<br>
-weather-api/ 
-
+Our java project will need to operate like the following flow design. Our subheadings breaks down each design below. <br>
 ├── src/ 
 
 │   ├── main/ 
@@ -212,7 +183,25 @@ weather-api/
 │   │   └── resources/ 
 
 │   │       └── application.properties 
-
 └── pom.xml 
+
+<h3 id="4.3.0.FirstJavaAPI">4.3.0.First API Call in Java</h3> <br>
+In java we need to test this on how we can call before we format this in a more organized structure which we will go into details below as shown in our design flow above. 
+
+In the project we have the url endpoint, we have the token and we know the information we would like to show. Our code shows this belwo here. 
+<br>
+path -> src/main/java/com/example/Weather/WeatherApplication.java
+
+
+
+<h3 id="4.3.1.ModelDesign">4.3.1.Creating our Model</h3> <br>
+
+
+Headers - https://api.openweathermap.org/data/2.5/weather?q=Dublin,IRE&appid={{apiKey}} 
+
+
+
+
+
 
  
