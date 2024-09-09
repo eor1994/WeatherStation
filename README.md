@@ -183,7 +183,7 @@ Our java project will need to operate like the following flow design. Our subhea
 │   │   └── resources/ 
 
 │   │       └── application.properties 
- └── pom.xml 
+
 <br>
 <h3 id="4.3.0.FirstJavaAPI">4.3.0.First API Call in Java</h3> <br>
 In java we need to test this on how we can call before we format this in a more organized structure which we will go into details below as shown in our design flow above. 
@@ -192,7 +192,7 @@ In the project we have the url endpoint, we have the token and we know the infor
 <br>
 path -> src/main/java/com/example/Weather/WeatherApplication.java
 
-
+<img src="images/chapter_4_springbootResponse.png"> <br>
 
 <h3 id="4.3.1.ModelDesign">4.3.1.Creating our Model</h3> <br>
 
