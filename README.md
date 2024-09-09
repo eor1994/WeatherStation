@@ -17,10 +17,10 @@
     - [4.1.2.weather api](#4.1.2.APiTemplate_2)
   - [4.2.testing our first example on Postman](#4.2.Postman)
   - [4.3.testing our first example on java](#4.3.testingjava)
-    - [4.3.1.Open Weather API](#4.3.1.ModelDesign)
-    - [4.3.2.Open Weather API](#4.3.2.ServiceDesgin)
-    - [4.3.3.Open Weather API](#4.3.3.ControllerDesgin)
-    - 
+    - [4.3.1.Creating our Model](#4.3.1.ModelDesign)
+    - [4.3.2.Creating our Service](#4.3.2.ServiceDesgin)
+    - [4.3.3.Creating our Controller](#4.3.3.ControllerDesgin)
+    - [4.3.4.Creating our FrontEnd Display](#4.3.4.FrontEndDisplay)
 
 <h1 id="1.intro">Project Introduction - Weather Station </h1>
 
@@ -201,8 +201,8 @@ Headers - https://api.openweathermap.org/data/2.5/weather?q=Dublin,IRE&appid={{a
 
 The design has the following highlighted. 
 
+CODE:
 public class WeatherModel {
-
     private String city; -city name
     private String country; - country name
     private String description; - desciption 
@@ -210,10 +210,55 @@ public class WeatherModel {
     //the mapping of the location
     private double latitude;
     private double longitude;
+}
+<br>
+the mode what is it ? 
+Model -> The Model represents the data that contain the attributes related to the application’s domain. 
+In our weather app, the model is used to represent the weather data (like city name, temperature, latitude, longitude, etc.) that we are fetching from the weather API.
 
+Structure in flow is shown as below:
+ Model Class             | 
+
++----------------------------+ 
+
+| - Create WeatherResponse   | 
+
+|   class with fields:       | 
+
+|   - city                   | 
+
+|   - description            | 
+
+|   - temperature            | 
+
++----------------------------+ 
+
+<img src="images/Chapter4_Model_code.png">
 <br>
 
+<h3 id="4.3.2.ServiceDesgin">4.3.2.Creating our Service</h3> <br>
 
+
+
+<h3 id="#4.3.3.ControllerDesgin">4.3.3.Creating our Controller</h3> <br>
+
+<h3 id="#4.3.4.FrontEndDisplay">4.3.4.Creating our FrontEnd Display</h3> <br>
+
+<h3 id="#4.3.5.Output">4.3.5.Showing our Result</h3> <br>
+In this section we will now show the following output on our work and how we got to this resolution. 
+
+Here you can see two options to select from, both of these will add to our api search. Here it will pass and java will do the rest. <br>
+The followin will return parse and then display the fields we only wanted to show to our users. 
+The first step you can enter city name in text, the select the country by its country code. <br>
+<img src="images/chapter_4_search_end.png">
+
+we can now hit search and it will now show the details.<br>
+<img src="images/chapter_4_result_frontend.png">
+<br>
+You can see that we added this from the fields from our java and how its called in html to display this info. 
+Our project now works. 
+
+Testing this more we noted that this is only searching by the city name, but if there was a duplicate the api notes that it will as a default use USA. This is a problem when using this but an issue we can fix later by using the lat and long instead. 
 
 
  
