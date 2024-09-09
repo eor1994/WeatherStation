@@ -270,14 +270,14 @@ Testing this more we noted that this is only searching by the city name, but if 
 
 <h2 id="5.1.AddingFeatures">5.0.Adding New Features to our UI</h2> <br>
 
-Now that we have the following working project we can now add a feature and one to prove to our users that this is the location of our api calling and displaying to us. 
+Now that we have the following working project we can now add a feature and one to prove to our users that this is the location of our api calling and displaying to us. <br>
 
-Reviewning other work and asking how can we add a map to show the location our api is showing our temperature from.
-Link -> https://www.youtube.com/watch?v=5G_MfwsGUIo
-credit to this video, we were able to understand that we can add using googles api call and display a map within our already created template of html and javascript. Now lets see how we can add. 
+Reviewning other work and asking how can we add a map to show the location our api is showing our temperature from.<br>
+Link -> https://www.youtube.com/watch?v=5G_MfwsGUIo <br>
+Credit to this video, we were able to understand that we can add using googles api call and display a map within our already created template of html and javascript. Now lets see how we can add. 
 <br>
 Following this video we had a static list but this is not what we tried to achieve we want to push our lat and long details from the api we called with the city name. Working on this with help from our internet we eventually got his to show the details 
-we wanted. 
+we wanted. <br>
 
-End result worked. We tested by searched cork city in country Ireland. 
+End result worked. We tested by searched cork city in country Ireland. <br>
 <img src="images/Chapter4_MapFeaturesearch.png">
