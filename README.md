@@ -145,7 +145,7 @@ In post man here we take the following template provided by the api documentatio
 <br>
 Now we run our request to the api endpoint and check to see what informtion we get, the details should follow the document guide.
 <br>
-<img src="images/Chapter4_postman test.png">
+<img src="images/chapter4_postmanResponse.png">
 Here you can see in the response it provides a large amount of information, in our project we only wish to have the temperature, location, latitude, longitude and country. 
 <br>
 All other details we can change but in our firts time to get this to display on our front end and to manipulate the data to help move to our AI recommendation part of the Project, we will discuss this later. 
