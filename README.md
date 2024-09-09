@@ -196,10 +196,22 @@ path -> src/main/java/com/example/Weather/WeatherApplication.java
 
 <h3 id="4.3.1.ModelDesign">4.3.1.Creating our Model</h3> <br>
 
-
 Headers - https://api.openweathermap.org/data/2.5/weather?q=Dublin,IRE&appid={{apiKey}} 
+<br>
 
+The design has the following highlighted. 
 
+public class WeatherModel {
+
+    private String city; -city name
+    private String country; - country name
+    private String description; - desciption 
+    private double temperature; - temperatiure
+    //the mapping of the location
+    private double latitude;
+    private double longitude;
+
+<br>
 
 
 
