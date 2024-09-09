@@ -21,6 +21,7 @@
     - [4.3.2.Creating our Service](#4.3.2.ServiceDesgin)
     - [4.3.3.Creating our Controller](#4.3.3.ControllerDesgin)
     - [4.3.4.Creating our FrontEnd Display](#4.3.4.FrontEndDisplay)
+  -[5.0.Adding New Features to our UI](#5.1.AddingFeatures)
 
 <h1 id="1.intro">Project Introduction - Weather Station </h1>
 
@@ -267,5 +268,16 @@ Our project now works.
 
 Testing this more we noted that this is only searching by the city name, but if there was a duplicate the api notes that it will as a default use USA. This is a problem when using this but an issue we can fix later by using the lat and long instead. 
 
+<h2 id="5.1.AddingFeatures">5.0.Adding New Features to our UI</h2> <br>
 
- 
+Now that we have the following working project we can now add a feature and one to prove to our users that this is the location of our api calling and displaying to us. 
+
+Reviewning other work and asking how can we add a map to show the location our api is showing our temperature from.
+Link -> https://www.youtube.com/watch?v=5G_MfwsGUIo
+credit to this video, we were able to understand that we can add using googles api call and display a map within our already created template of html and javascript. Now lets see how we can add. 
+<br>
+Following this video we had a static list but this is not what we tried to achieve we want to push our lat and long details from the api we called with the city name. Working on this with help from our internet we eventually got his to show the details 
+we wanted. 
+
+End result worked. We tested by searched cork city in country Ireland. 
+<img src="images/Chapter4_MapFeaturesearch.png">
