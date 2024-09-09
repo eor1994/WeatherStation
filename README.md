@@ -184,7 +184,7 @@ Our java project will need to operate like the following flow design. Our subhea
 
 │   │       └── application.properties 
  └── pom.xml 
-
+<br>
 <h3 id="4.3.0.FirstJavaAPI">4.3.0.First API Call in Java</h3> <br>
 In java we need to test this on how we can call before we format this in a more organized structure which we will go into details below as shown in our design flow above. 
 
