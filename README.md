@@ -285,3 +285,17 @@ End result worked. We tested by searched cork city in country Ireland. <br>
 <br>
 <h2 id="6.0.AddingFeatures">6.0.Chats with AI</h2> <br>
 
+Asking now how to add AI chats to our app, lets see what our buddy chatgpt has to offer to help on this matter. Image taken of our questions and the response guidance 
+
+Question:
+
+Response:
+
+Breakdown of our answer its getting this information of itself, a good way to start. The endpoint to use in our code is correct from our article on this topic. <br>
+Link -> https://platform.openai.com/docs/api-reference/chat/create?lang=node.js <br>
+
+This link discuss how to use with guidance. <br>
+The post api call to use in this case as highlighted in out chatgpt. <br>
+post "https://api.openai.com/v1/chat/completions"<br>
+
+This post creates a model response for the given chat conversation.
