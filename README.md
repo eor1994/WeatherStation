@@ -281,3 +281,7 @@ we wanted. <br>
 
 End result worked. We tested by searched cork city in country Ireland. <br>
 <img src="images/Chapter4_MapFeaturesearch.png">
+
+<br>
+<h2 id="6.0.AddingFeatures">6.0.Chats with AI</h2> <br>
+
