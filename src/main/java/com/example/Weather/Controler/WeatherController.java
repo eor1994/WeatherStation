@@ -26,7 +26,7 @@ public class WeatherController {
 
     @GetMapping("/")
     public String home() {
-        return "index";
+        return "index";//returns the index.html template
     }
 
     @GetMapping("/searchWeather")
@@ -37,10 +37,13 @@ public class WeatherController {
             @RequestParam(value = "countryCode") String countryCode,
             //country code IRE = Ireland
             Model model) {
-
+        try {
             WeatherModel weatherModel = weatherService.getWeather(city, countryCode, apiKey);
             model.addAttribute("weather", weatherModel);
-
+        }
+        catch (Exception e) {
+            model.addAttribute("error", "Could not fetch weather data.");
+        }
 
         return "index";
     }

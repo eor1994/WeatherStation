@@ -1,6 +1,4 @@
 package com.example.Weather.Model;
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
 
 public class WeatherModel {
 
@@ -8,14 +6,19 @@ public class WeatherModel {
     private String country;
     private String description;
     private double temperature;
+    private double latitude;
+    private double longitude;
+
 
     // Constructor, getters, and setters
-    public WeatherModel(String city, String country, String description, double temperature) {
+    public WeatherModel(String city, String country, String description, double temperature, double latitude, double longitude) {
         this.city = city;
         //country code
         this.country = country;
         this.description = description;
         this.temperature = temperature;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public String getCity() { return city; }
@@ -31,5 +34,20 @@ public class WeatherModel {
     public double getTemperature() { return temperature; }
     public void setTemperature(double temperature) { this.temperature = temperature; }
 
-}
+     public double getLatitude() {
+        return latitude;
+    }
 
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
+}

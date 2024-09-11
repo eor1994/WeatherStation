@@ -15,10 +15,10 @@ public class WeatherService {
         this.webClient = webClientBuilder.baseUrl("http://api.openweathermap.org/data/2.5/weather").build();
     }
 
-    public WeatherModel getWeather(String city, String country, String apiKey) {
+    public WeatherModel getWeather(String city, String countryCode, String apiKey) {
             String response = webClient.get()
                     .uri(uriBuilder -> uriBuilder
-                            .queryParam("q", city + "," + country)
+                            .queryParam("q", city + "," + countryCode)
                             .queryParam("appid", apiKey)
                             .queryParam("units", "metric")
                             .build())
@@ -31,9 +31,10 @@ public class WeatherService {
             JSONObject jsonObject = new JSONObject(response);
             String description = jsonObject.getJSONArray("weather").getJSONObject(0).getString("description");
             double temperature = jsonObject.getJSONObject("main").getDouble("temp");
+            double latitude = jsonObject.getJSONObject("coord").getDouble("lat");
+            double longitude = jsonObject.getJSONObject("coord").getDouble("lon");
 
-            return new WeatherModel(city, country, description, temperature);
-
+            return new WeatherModel(city, countryCode, description, temperature, latitude, longitude);
         }
 
 }
