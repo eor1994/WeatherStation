@@ -8,14 +8,15 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Service
 public class WeatherService {
     //private String apiUrl;
-    private String apiKey;
+    //private String apiKey;
     private final WebClient webClient;
+    private String apiKey = "257b4304aeeb76b44b77358c13ccccac";
 
     public WeatherService(WebClient.Builder webClientBuilder) {
         this.webClient = webClientBuilder.baseUrl("http://api.openweathermap.org/data/2.5/weather").build();
     }
 
-    public WeatherModel getWeather(String city, String countryCode, String apiKey) {
+    public WeatherModel getWeather(String city, String countryCode) {
             String response = webClient.get()
                     .uri(uriBuilder -> uriBuilder
                             .queryParam("q", city + "," + countryCode)
