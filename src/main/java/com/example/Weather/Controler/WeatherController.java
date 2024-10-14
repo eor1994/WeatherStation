@@ -1,6 +1,7 @@
 package com.example.Weather.Controler;
 
 import com.example.Weather.Model.WeatherModel;
+import com.example.Weather.Service.ChatGPTService;
 import com.example.Weather.Service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
@@ -20,10 +21,7 @@ public class WeatherController {
         this.weatherService = weatherService;
     }
 
-//    @GetMapping("/")
-//    public String home() {
-//        return "index";//returns the index.html template
-//    }
+
 
     @GetMapping("/searchWeather")
     public WeatherModel WeatherModel
