@@ -10,6 +10,7 @@ public class WeatherModel {
     private double longitude;
 
 
+    public WeatherModel(){}
     // Constructor, getters, and setters
     public WeatherModel(String city, String country, String description, double temperature, double latitude, double longitude) {
         this.city = city;
@@ -26,7 +27,7 @@ public class WeatherModel {
 
     //country -added
     public String getCountry() { return country; }
-    public void getCountry(String city) { this.country = country; }
+    public void setCountry(String country) { this.country = country; }
 
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }

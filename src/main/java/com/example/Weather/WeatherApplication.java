@@ -1,15 +1,13 @@
 package com.example.Weather;
-import com.example.Weather.Service.WeatherService;
-import com.example.Weather.Model.WeatherModel;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
+
 import java.net.URL;
 import java.util.Scanner;
-import java.net.http.HttpRequest;
+
 
 
 @SpringBootApplication

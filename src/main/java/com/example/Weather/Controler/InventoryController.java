@@ -1,5 +1,5 @@
 package com.example.Weather.Controler;
-import com.example.Weather.Service.InventoryService;
+import com.example.Weather.Service.WeatherService;
 import com.example.Weather.Model.Inventory;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.Optional;
 public class InventoryController {
 
     @Autowired
-    private InventoryService inventoryService;
+    private WeatherService inventoryService;
 
     //?
     // Get all inventories

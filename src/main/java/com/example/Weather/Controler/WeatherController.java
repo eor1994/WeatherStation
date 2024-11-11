@@ -1,7 +1,7 @@
 package com.example.Weather.Controler;
 
 import com.example.Weather.Model.WeatherModel;
-import com.example.Weather.Service.ChatGPTService;
+import com.example.Weather.Service.WeatherService;
 import com.example.Weather.Service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
@@ -16,7 +16,7 @@ public class WeatherController {
     //@Value("${weather.api.key}")
 
 
-    @Autowired
+@Autowired
     public WeatherController(WeatherService weatherService) {
         this.weatherService = weatherService;
     }

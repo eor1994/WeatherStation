@@ -13,6 +13,7 @@ public class Inventory {
     private String id;
     private String name;
     private List<Item> items;
+    private int quantity;
 
      // Constructors
     public Inventory() {}
@@ -47,4 +48,13 @@ public class Inventory {
     public void setItems(List<Item> items) {
         this.items = items;
     }
+
+        public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
 }
