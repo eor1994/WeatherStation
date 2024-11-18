@@ -2,10 +2,11 @@ package com.example.Weather.Controler;
 
 import com.example.Weather.Model.WeatherModel;
 import com.example.Weather.Service.WeatherService;
-import com.example.Weather.Service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
@@ -14,9 +15,10 @@ public class WeatherController {
 
     private final WeatherService weatherService;
     //@Value("${weather.api.key}")
+    static WeatherModel weatherModel;
 
 
-@Autowired
+    @Autowired
     public WeatherController(WeatherService weatherService) {
         this.weatherService = weatherService;
     }
@@ -32,7 +34,12 @@ public class WeatherController {
             //country code IRE = Ireland
             Model model) {
         try {
-            WeatherModel weatherModel = weatherService.getWeather(city, countryCode);
+            weatherModel = weatherService.getWeather(city, countryCode);
+            System.out.println(weatherModel.getCity());
+            System.out.println(countryCode);
+            System.out.println(weatherModel.getCountry());
+            System.out.println(weatherModel.getTemperature());
+
             model.addAttribute("weather", weatherModel);
         }
         catch (Exception e) {
@@ -40,5 +47,9 @@ public class WeatherController {
         }
 
         return weatherService.getWeather(city, countryCode);
+    }
+
+    public static WeatherModel returnWM(){
+        return weatherModel;
     }
 }

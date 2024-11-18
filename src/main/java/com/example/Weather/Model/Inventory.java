@@ -57,4 +57,11 @@ public class Inventory {
         this.quantity = quantity;
     }
 
+    @Override
+    public String toString() {
+    return "Inventory id: " + this.getId() +
+           ", inventory Name: " + this.getName() +
+             ", items: " + this.getItems();
+    }
+
 }

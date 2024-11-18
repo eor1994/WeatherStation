@@ -1,4 +1,5 @@
 package com.example.Weather.Controler;
+import com.example.Weather.Model.WeatherModel;
 import com.example.Weather.Service.WeatherService;
 import com.example.Weather.Model.Inventory;
 
@@ -7,12 +8,14 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 //api calls
 @RestController
 @RequestMapping("/api/inventory")
 
 public class InventoryController {
+    static List<Inventory> list;
 
     @Autowired
     private WeatherService inventoryService;
@@ -25,10 +28,12 @@ public class InventoryController {
     }
 
     //?
-    // Get an inventory by ID
     @GetMapping("/{id}")
-    public Optional<Inventory> getInventoryById(@PathVariable String id) {
-        return inventoryService.getInventoryById(id);
+    public List<Inventory> getInventoryById(@PathVariable String id) {
+        Optional<Inventory> o = inventoryService.getInventoryById(id);
+        list = o.stream().collect(Collectors.toList());
+        System.out.println(list);
+        return list;
     }
 
     //add new inventory ?
@@ -36,5 +41,9 @@ public class InventoryController {
     @PostMapping
     public Inventory addInventory(@RequestBody Inventory inventory) {
         return inventoryService.addInventory(inventory);
+    }
+
+    public static List<Inventory> returnInventoryList(){
+        return list;
     }
 }

@@ -53,4 +53,11 @@ public class Item {
         this.quantity = quantity;
     }
 
+    @Override
+    public String toString() {
+    return "item quantity: " + this.getQuantity() +
+           ", item name: " + this.getName() +
+             ", item color: " + this.getColor();
+    }
+
 }
